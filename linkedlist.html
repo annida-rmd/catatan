@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Strukdat_25-173</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-container">
+				<div class="logo">
+					<h2>Catatan</h2>
+				</div>
+
+				<div class="profile">
+					<h3>Annida Ramadayanti</h3>
+					<p>250411100173</p>
+				</div>
+			</div>
+		</header>
+			<nav><h2>Struktur Data</h2>
+				<a href="stack.html">Stack</a>
+				<a href="antrian.html">Antrian</a>
+				<a href="double_antrian.html">Double Antrian</a>
+				<a href="infixpostfix.html">Infix to Postfix</a>
+				<a href="infixprefix.html">Infix to Prefix</a>
+				<a href="postfixinfix.html">Postfix to Infix</a>
+				<a href="postfixprefix.html">Prefix To Infix</a>
+				<a href="evaluasipostfix.html">Evaluasi Postfix</a>
+				<a href="sorting1.html">Sorting 01</a>
+				<a href="sorting2.html">Sorting 02</a>
+				<a href="sorting3.html">Sorting 03</a>
+				<a href="searching.html">Searching</a>
+				<a href="hashing.html">Hashing</a>
+				<a href="linkedlist.html">Linked List</a>
+				<a href="tree.html">Tree</a><br>
+			 </nav>
+			<main> 
+				<section class="card">
+					<h1>Linked List</h1>
+					<p>Linked list adalah struktur data fundamental dalam ilmu komputer. Fungsi utamanya adalah memungkinkan operasi penyisipan dan penghapusan yang lebih efisien dibandingkan dengan array . Seperti array, linked list juga digunakan untuk mengimplementasikan struktur data lain seperti stack, queue, dan deque.
+						Linked list adalah jenis struktur data linear di mana setiap item tidak selalu berada di lokasi yang berdekatan. Setiap item disebut node dan dihubungkan satu sama lain menggunakan link.</p>
+					<img src="img/Linked-list.webp" alt="" width="700px" height="350px">
+					<ul>
+						<li>Sebuah node berisi dua hal, pertama adalah data dan kedua adalah tautan yang menghubungkannya dengan node lain.</li>
+						<li>Node pertama disebut node kepala dan kita dapat menelusuri seluruh daftar menggunakan tautan kepala dan berikutnya ini.</li>
+					</ul>
+					<h2>Berikut perbandingan antara Linked List dan Array.</h2>
+
+					<h4>Linked List:</h4>
+					<ul>
+						<li>Struktur Data: Tidak Berurutan</li>
+						<li>Alokasi Memori: Biasanya dialokasikan satu per satu ke masing-masing elemen.</li>
+						<li>Penyisipan/Penghapusan: Efisien</li>
+						<li>Akses: Berurutan</li>
+					</ul>
+					<h4>Array:</h4>
+					<ul>
+						<li>Struktur Data: Berurutan</li>
+						<li>Alokasi Memori: Biasanya dialokasikan ke seluruh array.</li>
+						<li>Penyisipan/Penghapusan: Tidak Efisien</li>
+						<li>Akses: Acak</li>
+					</ul>
+					<h2>Contoh Code</h2>
+					<post>
+						<code>
+							q = []
+							<br>q.append('a')
+							<br>q.append('b')
+							<br>q.append('c')
+
+							<br>print("Initial queue:", q)
+
+							<br>print("Elements dequeued from queue:")
+							<br>print(q.pop(0))
+							<br>print(q.pop(0))
+							<br>print(q.pop(0))
+
+							<br>print("Queue after removing elements:", q)
+						</code>
+					</post>
+					<h2>Basics</h2>
+					<p><b>Singly Linked List Tutorial</b></p>
+					<p>A singly linked list is a fundamental data structure, it consists of nodes where each node contains a data field and a reference to the next node in the linked list. The next of the last node is null, indicating the end of the list. Linked Lists support efficient insertion
+						 and deletion operations.</p>
+					<img src="img/link1.webp" alt="">
+					<p><b>Understanding Node Structure</b></p>
+					<p>In a singly linked list, each node consists of two parts: data and a pointer to the next node. This structure allows nodes to be dynamically linked together, 
+						forming a chain-like sequence.</p>
+					<h3>Contoh Code</h3>
+					<post>
+						<code>
+							# Definition of a Node in a singly linked list
+							class Node:<br>
+								def __init__(self, data):<br>
+									# Data part of the node<br>
+									self.data = data   <br>
+									self.next = None<br>
+						</code>
+					</post>
+					<p><b>Doubly Linked List Tutorial</b></p>
+					<p>A doubly linked list is a more complex data structure than a singly linked list, but it offers several advantages. The main advantage of a doubly linked list is that it allows for efficient traversal of the list in both directions. This is because each node in the list contains a pointer to the previous node and a pointer to the next node. This allows for quick and easy insertion and deletion of nodes from the list, as well as efficient 
+						traversal of the list in both directions.</p>
+					<img src="img/11.webp" alt="">
+					<p><b>Representation of Doubly Linked List in Data Structure</b></p>
+					<p>In a data structure, a doubly linked list is
+						 represented using nodes that have three fields:</p>
+					<ul>
+						<li>Data</li>
+						<li>A pointer to the next node (next)</li>
+						<li>A pointer to the previous node (prev)</li>
+					</ul>
+					<img src="img/22.webp" alt="">
+					<h3>Contoh Code</h3>
+					<post>
+						<code>
+							class Node:<br>
+  <br>
+								def __init__(self, data):<br>
+									# To store the value or data.<br>
+									self.data = data<br>
+<br>
+									# Reference to the previous node<br>
+									self.prev = None<br>
+<br>
+									# Reference to the next node<br>
+									self.next = None<br>
+						</code>
+					</post>
+					<p><b>Introduction to Circular Linked List</b></p>
+					<p>A circular linked list is a data structure where the last node points 
+						back to the first node, forming a closed loop.</p>
+					<ul>
+						<li>Structure: All nodes are connected in a circle, enabling continuous 
+							traversal without encountering NULL.</li>
+						<li>Difference from Regular Linked List: In a regular linked list, the last node points to NULL, whereas in a circular linked list, 
+							it points to the first node.</li>
+						<li>Uses: Ideal for tasks like scheduling and managing playlists, where smooth and repeated.</li>
+					</ul>
+					<p><b>Types of Circular Linked Lists</b></p>
+					<p><b>1. Circular Singly Linked List</b></p>
+					<p>In Circular Singly Linked List, each node has just one pointer called the "next" pointer. The next pointer of the last node points back to the first node and this results in forming a circle. In this type of Linked list, 
+						we can only move through the list in one direction.</p>
+					<img src="img/25.webp" alt="">
+					<p><b>2. Circular Doubly Linked List:</b></p>
+					<p>In circular doubly linked list, each node has two pointers prev and next, similar to doubly linked list. The prev pointer points to the previous node and the next points to the next node. Here, in addition to the last node storing the address of the first node, the first node will also store the 
+						address of the last node.</p>
+					<img src="img/26.webp" alt="">
+					<p>Note: Here, we will use the singly linked list to explain the working of 
+						circular linked lists.</p>
+					<p><b>Representation of a Circular Singly Linked List</b></p>
+					<p>Let's take a look on the structure of a circular linked list.</p>
+					<img src="img/27.webp" alt="">
+					<post>
+						<code>
+							<br>class Node:
+								<br>def __init__(self, data):<br>
+									self.data = data<br>
+									self.next = None<br>
+						</code>
+					</post><br>
+					<p>In the code above, each node has data and a pointer to the next node. When we create multiple nodes for a circular linked list, we only need to connect the last 
+						node back to the first one.</p>
+				</section>
+			</main>
+		</div>
+
+		<footer>&copy; 2026 Annida Ramadayanti. All rights reserved.</footer>
+
+	</body>
+</html>

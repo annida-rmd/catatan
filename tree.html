@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Strukdat_25-173</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-container">
+				<div class="logo">
+					<h2>Catatan</h2>
+				</div>
+
+				<div class="profile">
+					<h3>Annida Ramadayanti</h3>
+					<p>250411100173</p>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper">
+			<nav><h2>Struktur Data</h2>
+				<a href="stack.html">Stack</a>
+				<a href="antrian.html">Antrian</a>
+				<a href="double_antrian.html">Double Antrian</a>
+				<a href="infixpostfix.html">Infix to Postfix</a>
+				<a href="infixprefix.html">Infix to Prefix</a>
+				<a href="postfixinfix.html">Postfix to Infix</a>
+				<a href="postfixprefix.html">Prefix to Infix</a>
+				<a href="evaluasipostfix.html">Evaluasi Postfix</a>
+				<a href="sorting1.html">Sorting 01</a>
+				<a href="sorting2.html">Sorting 02</a>
+				<a href="sorting3.html">Sorting 03</a>
+				<a href="searching.html">Searching</a>
+				<a href="hashing.html">Hashing</a>
+				<a href="linkedlist.html">Linked List</a>
+				<a href="tree.html">Tree</a><br>
+			 </nav>
+			<main> 
+				<section class="card">
+					<h1>Tree</h1>
+					<p> Tree adalah struktur data hierarkis yang digunakan untuk mengatur dan merepresentasikan data dalam hubungan parent-child . Tree terdiri dari simpul-simpul, di mana simpul teratas disebut root , dan setiap simpul lainnya dapat memiliki satu atau  child nodes .</p>
+					<table>
+						<tr>
+							<td><img src="img/1.webp" alt="" width="250px" height="150px"></td>
+							<td><img src="img/2.webp" alt="" width="250px" height="150px"></td>
+							<td><img src="img/3.webp" alt="" width="250px" height="150px"></td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td><img src="img/4.webp" alt="" width="250px" height="150px"></td>
+							<td><img src="img/5.webp" alt="" width="250px" height="150px"></td>
+						</tr>
+					</table>
+					<h4>Basic Terminologies In Tree Data Structure:</h4>
+					<ul>
+						<li>Parent Node: A node that is an immediate predecessor of another node. Example: 35 is the parent of 3 and 6.</li>
+						<li>Child Node: A node that is an immediate successor of another node. Example: 3 and 6 are children of 35.</li>
+						<li>Root Node: The topmost node in a tree, which does not have a parent. Example: 15 is the root node.</li>
+						<li>Leaf Node (External Node): Nodes that do not have any children. Example: 1, 10, 12, 5, 7, 7 are leaf nodes.</li>
+						<li>Ancestor: Any node on the path from the root to a given node (excluding the node itself). Example: 15 and 35 are ancestors of 10.</li>
+						<li>Descendant: A node x is a descendant of another node y if y is an ancestor of x. Example: 1, 10, and 6 are descendants of 35.</li>
+						<li>Sibling: Nodes that share the same parent. Example: 1 and 10 are siblings, and 5 and 7 are siblings.</li>
+						<li>Level of a Node: The number of edges in the path from the root to that node.The root node is at level 0.</li>
+						<li>Internal Node: A node with at least one child.</li>
+						<li>Neighbor of a Node: The parent or children of a node.</li>
+						<li>Subtree:  A node and all its descendants form a subtree.</li>
+					</ul>
+					<h3>Contoh Code</h3>
+					<post>
+						<code>
+							class Node:
+								<br>->def __init__(self, x):
+									<br>-->self.data = x
+									<br>-->self.children = []
+						</code>
+					</post>
+					<h2>Importance of Tree Data Structure:</h2>
+					<ul>
+						<li>Trees are useful for storing data that naturally forms a hierarchy.</li>
+						<li>File systems on computers are structured as trees, with folders containing subfolders and files.</li>
+						<li>The DOM (Document Object Model) of an HTML page is a tree:The <html> tag is the root.<head> and <body> are its children.These tags can have their own child nodes, forming a hierarchical structure.</li>
+						<li>Trees help in efficient data organization and retrieval for hierarchical relationships.</li>
+					</ul>
+					<h2>Types of Tree</h2>
+					<p>	A tree is a hierarchical data structure that consists of nodes connected by edges. It is used to represent relationships between elements, where each node holds data and is connected to other nodes with edges.</p>
+					<img src="img/tree.webp" width="600px" alt="">
+					<p> <b>1. Binary Tree </b><br>
+						A binary tree is a tree data structure where each node has at most two children. These two children are usually referred to as the left child and right child. 
+						<br>
+						Example: Consider the tree below. Since each node of this tree has at most 2 children, it can be said that this tree is a Binary Tree.</p>
+					<img src="img/1 (1).webp" alt="">
+					<h4>Types of Binary Tree:</h4>
+					<ul>
+						<li>Binary Search Tree (BST) and its Variations: A BST is a binary tree where each node has at most two children, and for each node, the left child’s value is smaller than the node’s value, and the right child’s value is greater.</li>
+						<li>Binary Search Tree (BST) and its Variations: A BST is a binary tree where each node has at most two children, and for each node, the left child’s value is smaller than the node’s value, and the right child’s value is greater.</li>
+						<li>Balanced Binary Tree: A binary tree where the difference in heights between the left and right subtrees of any node is minimal (often defined as at most 1). Examples of Balanced Binary Tree are AVL Tree, Red Black Tree and Splay Tree.</li>
+					</ul>
+					<p> <b>2. Ternary Tree </b><br>
+						A Ternary Tree is a tree data structure in which each node has at most three children. These three children are usually referred to as the left child, mid child and right child. 
+						<br>
+						Example: Consider the tree below. Since each node of this tree has only 3 children, it can be said that this tree is a Ternary Tree.					
+						<img src="img/frame_3070.webp" alt="">
+					<h4>Examples of Ternary Tree:</h4>
+					<ul>
+						<li>Ternary Search Tree: A ternary search tree is a special trie data structure where the child nodes of a standard trie are ordered as a binary search tree.</li>
+						<li>Ternary Heap: A type of heap where each node can have up to three children, though less common than binary heaps.</li>
+					<p> <b>3. N-ary Tree (Generic Tree) </b><br>
+						An N-ary tree is a generalization of a binary tree, such that each node can have at most N children.
+						<br>
+						Example: Consider the tree below. Here, n=5, since each node of this tree has less than or equal to 5 children, it can be said that this tree is a n-ary tree for n = 5.					
+						<img src="img/frame_3140.webp" alt="">
+					<h4>Examples of N-ary Trees:</h4>
+					<ul>
+						<li>B-tree: A self-balancing search tree where nodes can have multiple children, usually used for indexing large databases.</li>
+						<li>B+ Tree: A B+ tree is a variation of the B-tree that only stores data in the leaf nodes, making range queries more efficient.</li>
+						<li>Trie (Prefix Tree): A tree where each node represents a character, and paths from the root to leaves represent strings. It can have a variable number of children for each node, making it an N-ary tree.</li>
+					<h2>Basic Operations Of Tree Data Structure:</h2>
+						<ul>
+							<li>Create – create a tree in the data structure.</li>
+							<li>Insert − Inserts data in a tree.</li>
+							<li>Search − Searches specific data in a tree to check whether it is present or not.</li>
+							<li>Traversal:
+								<a href="https://www.geeksforgeeks.org/dsa/depth-first-search-or-dfs-for-a-graph/">Depth-First-Search Traversal</a>
+								<br><a href="https://www.geeksforgeeks.org/dsa/breadth-first-search-or-bfs-for-a-graph/">Breadth-First-Search Traversal</a></li>
+						</ul>
+					
+					<h3>Contoh Code</h3>
+					<post>
+						<code>
+							import sys<br>
+							# Node structure for tree<br>
+							class Node:<br>
+								def __init__(self, x):<br>
+									self.data = x<br>
+									self.children = []<br>
+							# Function to add a child to a node<br>
+							def addChild(parent, child):<br>
+								parent.children.append(child)<br>
+							# Function to print parents of each node<br>
+							def printParents(node, parent):<br>
+								if parent is None:<br>
+									print(str(node.data) + " -> NULL")<br>
+								else:<br>
+									print(str(node.data) + " -> " + str(parent.data))<br>
+								for child in node.children:<br>
+									printParents(child, node)<br>
+							# Function to print children of each node<br>
+							def printChildren(node):<br>
+								children_str = " ".join(str(child.data) for child in node.children)<br>
+								print(str(node.data) + " -> " + children_str)<br>
+								for child in node.children:<br>
+									printChildren(child)<br>
+							# Function to print leaf nodes<br>
+							def printLeafNodes(node):<br>
+								if not node.children:<br>
+									sys.stdout.write(str(node.data) + " ")<br>
+									return<br>
+								for child in node.children:<br>
+									printLeafNodes(child)<br>
+							# Function to print degrees of each node <br>
+							def printDegrees(node, parent):<br>
+								degree = len(node.children)<br>
+								if parent is not None:<br>
+									degree += 1<br>
+								print(str(node.data) + " -> " + str(degree))<br>
+								for child in node.children:<br>
+									printDegrees(child, node)<br>
+							# Main execution<br>
+							if __name__ == "__main__":<br>
+								# Creating nodes<br>
+								root = Node(1)<br>
+								n2 = Node(2)<br>
+								n3 = Node(3)<br>
+								n4 = Node(4)<br>
+								n5 = Node(5)<br>
+								# Constructing tree<br>
+								addChild(root, n2)<br>
+								addChild(root, n3)<br>
+								addChild(n2, n4)<br>
+								addChild(n2, n5)<br>
+								print("Parents of each node:")<br>
+								printParents(root, None)<br>
+								print("Children of each node:")<br>
+								printChildren(root)<br>
+								print("Leaf nodes: ")<br>
+								printLeafNodes(root)<br>
+								print("\n")  # Newline after leaf nodes<br>
+								print("Degrees of nodes:")<br>
+								printDegrees(root, None)<br>
+						</code>
+					</post>
+				</section>
+		
+			</main>
+		</div>
+
+		<footer>&copy; 2026 Annida Ramadayanti. All rights reserved.</footer>
+
+	</body>
+</html>
